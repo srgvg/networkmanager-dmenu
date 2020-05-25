@@ -450,7 +450,6 @@ def get_selection(eths, aps, vpns, wgs, gsms, blues, wwan, others, saved):
     empty_action = [Action('', None)] if not compact else []
     all_actions = []
     all_actions += eths + empty_action if eths else []
-    all_actions += aps + empty_action if aps else []
     all_actions += vpns + empty_action if vpns else []
     all_actions += wgs + empty_action if wgs else []
     all_actions += gsms + empty_action if (gsms and wwan) else []
